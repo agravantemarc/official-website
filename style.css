@@ -1,9 +1,15 @@
 h1{
     color: aqua;
+    font-weight: 500;
+    font-size: xx-large;
 }
 
-p{
+*{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
     font-weight: 300;
+}
+
+h5{
+    font-size: large;
 }
