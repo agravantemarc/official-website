@@ -5,20 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About the Author</title>
     <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    
+    <style>
+        h2, #about{
+            text-align: center;
+            background-color: burlywood;
+            padding: 25px 25px;
+            margin: auto;
+        }
+
+        h2{
+            text-transform: uppercase;
+        }
+
+        body{
+            background-color: antiquewhite;
+        }
+        div a:link, div a:visited{
+        background-color: #f44336;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 25px;
+        margin-top: 10px;
+        margin-left: 20px;
+        }
+
+        div .contact{
+            margin-left: 78% !important;
+        }
+
+        div a:hover, div a:active{
+        background-color: red;
+        color: aquamarine;
+        }
+
+        .personal-details{
+            margin: auto;
+            margin-left: 20px;
+            background-color: burlywood;
+            border: 5px solid pink;
+            height: 25%;
+            width: 45%;
+            padding-left: 2%;
+        }
+
+        .educational-attainment{
+            margin: auto;
+            margin-left: 20px;
+            background-color: burlywood;
+            border: 5px solid pink;
+            height: 25%;
+            width: 45%;
+            padding-left: 2%;
+            margin-top: 10px;
+        }
+
+        .workshops{
+            margin: auto;
+            margin-left: 20px;
+            background-color: burlywood;
+            border: 5px solid pink;
+            height: 25%;
+            width: 45%;
+            padding-left: 2%;
+            margin-top: 10px;
+        }
+
+        .my-picture{
+            margin-left: 50%;
+            height: 0px;
+            border: 2px solid black;
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
-    <h2>All About The Author</h2>
-    <br>
-    <h3>Name: Marc Christian N. Agravante</h3>
-    <br>
-    <h4>Personal Data</h4>
+    <h2>About Marc Agravante</h2>
+    <p id="about">A self-proclaimed chef whose culinary journey has been shaped by years of hands-on experience in the kitchen. With a passion for creating delicious and memorable meals, he has honed his skills through experimentation, tradition, and a love for food that knows no bounds.</p>
+    <hr>
+    <div class="my-picture">
+        <img src="images/462558892_1238805814212301_8895260445555545944_n.jpg" alt="">
+    </div>
+    <div class="personal-details">
+        <h4>Personal Data</h4>
         <p>Date of Birth: March 14, 2006</p>
         <p>Place of Birth: Lapu-Lapu City, Cebu</p>
         <p>Civil Status: Single</p>
         <p>Citizenship: Filipino</p>
         <p>Religion: Roman Catholic</p>
         <p>Mother's Name: Helen N. Agravante</p>
-    <h4>Educational Attainment</h4>
+    </div>
+    
+    <div class="educational-attainment">
+        <h4>Educational Attainment</h4>
         <ul>
             <li>Carcar Central Elementary School</li>
             <p>Year 2012-2018</p>
@@ -30,7 +111,9 @@
             <p>Year 2022-2024</p>
             <p>Senior High School</p>
         </ul>
-    <h4>Seminars, Workshops, Trainings</h4>
+    </div>
+    <div class="workshops">
+        <h4>Seminars, Workshops, Trainings</h4>
         <ul>
             <li>CHURCH YOUTH Organization Officers Seminar</li>
             <p>Carcar City</p>
@@ -42,7 +125,10 @@
             <p>Ocana National High School</p>
             <p>2022</p>
         </ul>
+    </div>
+    <div>
     <a href="./index.html">Home</a>
-    <a href="./contact.html">How to find us</a>
+    <a href="./contact.html" class="contact">How to find us</a>
+    </div>
 </body>
 </html>

@@ -1,15 +1,61 @@
 h1{
-    color: aqua;
-    font-weight: 500;
+    color: black;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
     font-size: xx-large;
+    text-align: center;
 }
 
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
-    font-weight: 300;
+div img{
+    display: block;
+    margin-left: 31%;
+    margin-right: auto;
+    height: 300px;
+    width: 500px;
+    background-color: burlywood;
+}
+
+li{
+    font-weight: 500;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+}
+
+p{
+    font-style: normal;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 h5{
     font-size: large;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    background-color: antiquewhite;
+}
+
+div a:link, div a:visited{
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+div a:hover, div a:active{
+    background-color: red;
+    color: aquamarine;
+}
+
+.main h1, p, .picture{
+    background-color: burlywood;
+    padding: 14px 25px;
+    margin: auto;
 }
