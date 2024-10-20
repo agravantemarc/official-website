@@ -3,56 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
-
+    <title>Profile Card</title>
     <style>
-        body{
-            background-color: antiquewhite;
+        body {
+            background-color: #6f5b41;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7%;
         }
-        div a:link, div a:visited{
-            background-color: #f44336;
+
+        .profiling {
+            background-color: #a58863;
             color: white;
-            padding: 14px 25px;
+            border-radius: 15px;
+            padding: 30px;
             text-align: center;
-            display: inline-block;
-            margin-bottom: 25px;
+            width: 320px;
         }
 
-        div a:hover, div a:active{
-            background-color: red;
-            color: aquamarine;
+        .profiling img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 0px;
         }
 
-        a:link, a:visited{
-            background-color: #f44336;
+        .profiling h2 {
+            margin-bottom: 5px;
+        }
+
+        .profiling p.location {
+            color: #a5ff3d;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 9px;
+        }
+
+        .profiling p.bio {
+            font-style: normal;
+            margin-top: 35px;
+        }
+
+        .profiling button {
+            background-color: #c1a075;
             color: white;
-            padding: 14px 25px;
-            text-align: center;
-            display: inline-block;
-            margin-bottom: 25px;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px 0;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 15px;
         }
 
-        a:hover, a:active{
-            background-color: red;
-            color: aquamarine;
-        }
-
-        div .about{
-            margin-left: 78% !important;
+        .profiling button:hover {
+            background-color: #deb887;
         }
     </style>
-
 </head>
 <body>
-    <ul>
-        <a href="https://www.facebook.com/agravante.marc">Facebook</a> 
-        <a href="https://www.instagram.com/__marcagravante/?igsh=MXF5ZWNpNDE2MDFtOA%3D%3D">Instagram</a>
-        <a href="https://x.com/__marcagravante?t=X2lRwdr4zw4akTy1azFt8g&s=09&mx=2">Twitter/X</a>
-    </ul>
-    <div>
-    <a href="./index.html">Home</a>
-    <a href="./about.html" class="about">About the Author</a>
+
+    <div class="profiling">
+        <img src="marky.jpg" alt="Profile Picture">
+        <h2>Marc Agravante</h2>
+        <p class="location">Cebu City, Philippines</p>
+        <p class="bio">“A journey to a happy stomach.”</p>
+        <button onclick="document.location='https://www.facebook.com/agravante.marc'">Facebook</button>
+        <button onclick="document.location='https://www.tiktok.com/@marc_agravante'">Tiktok</button>
+        <button onclick="document.location='https://www.threads.net/@_marcagravante'">Threads</button>
+        <button onclick="document.location='https://x.com/__marcagravante?t=WZ1ou_ZKlxcR4I8k2qkoog&s=09'">Twitter</button>
+        <button onclick="document.location='https://www.instagram.com/_marcagravante/'">Instagram</button>
     </div>
+
 </body>
 </html>
