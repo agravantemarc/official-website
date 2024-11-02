@@ -1,81 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
-    <title>How to Find Us</title>
-    <style>
-        body {
-            background-color: #6f5b41;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 7%;
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .profiling {
-            background-color: #a58863;
-            color: white;
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            width: 320px;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-        .profiling img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 0px;
-        }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        .profiling h2 {
-            margin-bottom: 5px;
-        }
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
 
-        .profiling p.location {
-            color: #a5ff3d;
-            font-size: 13px;
-            font-weight: bold;
-            margin-top: 3px;
-        }
-
-        .profiling p.bio {
-            font-style: normal;
-            margin-top: 25px;
-        }
-
-        .profiling button {
-            background-color: #c1a075;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin: 5px 0;
-            border-radius: 5px;
-            width: 100%;
-            font-size: 15px;
-        }
-
-        .profiling button:hover {
-            background-color: #deb887;
-        }
-    </style>
+  <title>Portfolio</title>
 </head>
 <body>
 
-    <div class="profiling">
-        <img src="marky.jpg" alt="Profile Picture">
-        <h2>Marc Agravante</h2>
-        <p class="location">Cebu City, Philippines</p>
-        <p class="bio">“A journey to a happy stomach.”</p>
-        <button onclick="document.location='https://www.facebook.com/agravante.marc'">Facebook</button>
-        <button onclick="document.location='https://www.tiktok.com/@marc_agravante'">Tiktok</button>
-        <button onclick="document.location='https://www.threads.net/@_marcagravante'">Threads</button>
-        <button onclick="document.location='https://x.com/__marcagravante?t=WZ1ou_ZKlxcR4I8k2qkoog&s=09'">Twitter</button>
-        <button onclick="document.location='https://www.instagram.com/_marcagravante/'">Instagram</button>
+  <nav>
+    <div class="left">
+      <a href="./index.html">Marc Agravante</a>
     </div>
 
+    <div class="right">
+      <a href="https://www.facebook.com/agravante.marc" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-facebook"></i>
+        <span>Facebook</span>
+      </a>
+      
+      <a href="https://www.instagram.com/_marcagravante/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+
+      <a href="https://x.com/__marcagravante?t=miKLPJTbAr0yE74qsQsjog&s=09" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-twitter"></i>
+        <span>Twitter</span>
+      </a>
+      
+      <a href="marcagravanteofficial@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Marc 👋</h2>
+        <p>I am a hardworking and fast-learning individual with a strong passion for programming. As an aspiring programmer, I am driven to continuously enhance my technical skills and expand my knowledge in the field of information technology. My dedication and quick adaptability make me an asset in any project that I will take, especially within innovative and tech-driven environments.</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+          <a href="#testimony">
+            <i class="fa-solid fa-pen"></i>
+            <span>Testimony</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="./marky.jpg" alt="marc agravante">
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        I’m currently learning HTML and CSS, and it’s been an exciting journey so far! I’m exploring how to structure web pages with HTML and style them with CSS to make them visually appealing. While I’m still in the early stages, I’m picking up new concepts quickly and enjoying the process of bringing ideas to life on the web. It’s challenging but rewarding, and I’m eager to keep building my skills to create more polished and interactive websites.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimony" class="testimony-section">
+      <h2>Inspiration</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="images/mark.jpg">
+          <p>Mark Nhevin Soterol</p>
+          <p>Accenture, Manager</p>
+        </div>
+
+        <div class="text">
+            A graduate of BSIT from Cebu Institute of Technology-University, earning the distinction of Magna Cum Laude, this accomplished individual is now a full-fledged programmer and Manager at Accenture. With a solid foundation in IT and a passion for innovative solutions, they bring expertise, leadership, and dedication to their role. Their commitment to excellence and in-depth programming skills drive success in every project, making them a valuable asset in the tech industry.
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+            Have questions, feedback, or an idea to share? We’d love to hear from you! Whether you're interested in a collaboration, need assistance, or just want to connect, don’t hesitate to reach out. Fill out the form, and we’ll respond as soon as we can. Alternatively, you can contact us directly through our email. Let’s start a conversation—we look forward to connecting with you!
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
