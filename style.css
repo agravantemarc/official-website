@@ -1,61 +1,425 @@
-h1{
-    color: black;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: xx-large;
-    text-align: center;
-}
-
-div img{
-    display: block;
-    margin-left: 31%;
-    margin-right: auto;
-    height: 300px;
-    width: 500px;
-    background-color: burlywood;
-}
-
-li{
-    font-weight: 500;
-    font-family: "Libre Baskerville", serif;
-    font-style: normal;
-}
-
-p{
-    font-style: normal;
+/* body {
     font-family: sans-serif;
-    text-align: center;
+    margin: 0;
+} */
+
+header {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-h5{
-    font-size: large;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: normal;
+.myheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-*{
-    background-color: antiquewhite;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-div a{
-    background-color: #f44336;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
+.logo img {
+    height: 40px;
+}
+
+.logo h1 {
+    margin: 0 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+.google {
+    display: flex;
+    align-items: center;
+}
+
+.google input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.google button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upper {
+    display: flex;
+    align-items: center;
+}
+
+.upper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.upper li {
+    margin-left: 20px;
+}
+
+.upper a {
+    text-decoration: none ;
+    color: #333;
+}
+
+.upper a:hover {
+    color: #ff5733;
+}
+/* The CSS in the upper part is for the header of the website in main page */
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    /* background-color: #D5D6EA; */
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 5px;
     display: inline-block;
-    margin-bottom: 25px;
+  }
+
+  .recipe {
+    width: 300px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .recipe img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .recipe-content {
+    padding: 15px;
+  }
+
+  .recipe-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .recipe-category {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+  }
+
+  .recipe-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .recipe-rating .star {
+    color: #ffc107;
+    font-size: 1.2em;
+  }
+
+  .recipe-rating .rating-count {
+    font-size: 0.9em;
+    margin-left: 5px;
+  }
+
+  .recipe-link {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .recipe-link:hover {
+    background-color: #ff6600;
+  }
+
+  .main-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 4%;
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+
+  .searching {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .search-box {
+    display: flex;
+    gap: 10px;
+  }
+
+  .search-box input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .search-box button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .popular-searches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .popular-searches button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .nav {
+    padding: 20px;
+
+  }
+
+  .nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .nav a:hover {
+    color: #ff6600;
+  }
+
+  .first {
+    margin-top: 10px;
+    padding: 0px;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .first p {
+    font-size: smaller;
+  }
+
+  .categories {
+    padding: 10px;
+    font-weight: bold;
+    font-style: oblique;
+  }
+
+  .categories a {
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .categories a:hover {
+    color: #ff6600;
+  }
+
+  /* The upper part of this comment is the CSS for the other options of recipes */
+
+
+  .main {
+    margin: 0;
+    margin-top: 2%;
+    padding: 20px;
+    background-color: #f5f6ea;
+  }
+  
+  .recipez {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sample {
+    width: 48%;
+    margin-bottom: 20px;
+    margin-left: 18%;
+  }
+  
+  .sample img {
+    width: 100%;
+    height: 85%;
+    border-radius: 5px;
+  }
+  
+  .sample a {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+
+  .sample a:hover{
+    color: #ff6600;
+  }
+  
+  .sample h6 {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+
+  .text-picture{
+    justify-content: right;
+    margin-left: 0px;
+  }
+
+  .image img {
+    width: 180px;
+    height: 135px;
+  }
+
+  .image figure:hover img {
+        opacity: 1;
+        -webkit-animation: flash 1.5s;
+        animation: flash 1.5s;
+    }
+    @-webkit-keyframes flash {
+        0% {
+            opacity: .4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes flash {
+        0% {
+            opacity: .4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+  /* The upper part of this CSS is the css code for the main content of main page */
+
+
+.ubos {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.card .heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+}
+.card h3 {
+    margin-top: 10px;
+}
+.card p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.card .ratings {
+    display: flex;
+    align-items: center;
+}
+.card .ratings i {
+    color: #f0c000;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.card .ratings span {
+    font-size: 14px;
 }
 
-div a:hover{
-    background-color: red;
-    color: aquamarine;
+.kinaubos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.main h1, p, .picture{
-    background-color: burlywood;
-    padding: 14px 25px;
-    margin: auto;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+
+.trustarc {
+  display: inline- block;
+  margin-left: 10px;
+}
+
+.trustarc img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #666;
+}
+
+.mainpage{
+    /* height: fit-content; */
+    width: 100% !important;
 }

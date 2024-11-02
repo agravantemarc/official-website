@@ -11,26 +11,272 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- This will be the home page of the website that the author is trying to develop -->
-<div class="main">
-    <h1>Best Filipino Recipes</h1>
-    <div class="picture">
-        <img src="./images/index.webp" alt="">
+    <!-- This header part is for the upper part of the main page -->
+    <header>
+        <div class="myheader">
+            <div class="logo">
+                <img src="favicon (1).ico" alt="Logo">
+                <h1>Marc's Kitchen</h1>
+            </div>
+            <div class="google">
+                <input type="search" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <nav class="upper">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./main dishes.html">Recipes</a></li>
+                    <li><a href="./contact.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- This part here will show the lower part of the main oage showing more options and search options of other recipes -->
+    <div class="nav">
+        <a href="#">RECIPES</a> >
+        <a href="#">CUISINE</a> >
+        <a href="#">ASIAN</a> >
+        <a href="#">FILIPINO</a>
     </div>
-    <p>There are so many reasons to love Filipino food. For one, it doesn't shy away from flavor. In many of these classic Filipino dishes, garlis, vinegar, and ginger team up to tantalize the tounge! We can't get enough of homestyle comfort foods like chicken adobo, pancit, afritada, and more. Give these top-rated chicken recipes a try</p>
-</div>
-    <hr>
-    <h5>MAIN DISHES</h5>
-    <h3><a href="./main dishes.html" style="color: brown;">The Top 4 Best Filipino Chicken Recipes</a></h3>
-    <ol>
-        <li>Ginataang Manok (Chicken Cooked in Coconut Milk)</li>
-        <li>Chicken Sotanghon</li>
-        <li>Slow Cooked Chicken Afritad</li>
-        <li>Chicken Afritada (Filipino Stew)</li>
-    </ol>
-    <div class="reference">
-        <a href="./about.html">About the Author</a>
-        <a href="./contact.html">How to Find Us</a>
+
+    <img class="mainpage" src="images/main.webp" alt="main picture">
+      
+    <div class="first">
+        <h1>Filipino Recipes</h1>
+        <p>Allrecipes makes Filipino cooking a tropical breeze. With more than 210 recipes, pancit, longanisa, lumpia, and adobo can be on your table before you know it.</p>
+        <div class="categories">
+          <a href="#">FILIPINO DESSERTS</a>
+          <a href="#">FILIPINO MAIN DISHES</a>
+          <a href="#">FILIPINO SOUPS AND STEWS</a>
+          <a href="#">CHICKEN ADOBO</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="recipez">
+            <div class="sample">
+                <img src="./images/index.webp" alt="Filipino Chicken">
+                <h6>MAIN DISHES</h6>
+                <a href="./main dishes.html"><h3>The 4 Best Filipino Chicken Recipes (𝘊𝘭𝘪𝘤𝘬 𝘏𝘦𝘳𝘦)</h3></a>
+            </div>
+
+            <div class="text-picture">
+                <div class="image">
+                    <div><figure><img src="images/pork.webp"></figure></div>
+                    <div><figure><img src="images/chicken afritada.jpg"></figure></div>
+                    <div><figure><img src="images/buchi.webp"></figure></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Explore Filipino Recipes</h1>
+    <div class="ubos">
+        <div class="card">
+            <img src="./images/ubos 1.webp" alt="Chicken Adobo">
+            <!-- <div class="heart">♥</div> -->
+            <h3>Roscoe's Chicken Adobo</h3>
+            <p>WHOLE CHICKEN RECIPES</p>
+            <div class="ratings">
+                <i>★</i>
+                <i>★</i>
+                <i>★</i>
+                <i>★</i>
+                <i>★</i>
+                <span>2 Ratings</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/ubos 2.webp" alt="Maja Blanca">
+            <!-- <div class="heart">♥</div> -->
+            <h3>Maja Blanca</h3>
+            <p>DESSERTS</p>
+            <div class="ratings">
+                <i>★</i>
+                <i>★</i>
+                <i>★</i>
+                <i>★</i>
+                <i>★</i>
+                <span>1 Rating</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/ubos 3.webp" alt="Pandan Chiffon Cake">
+            <!-- <div class="heart">♥</div> -->
+            <h3>Pandan Chiffon Cake</h3>
+            <p>SPONGE CAKE RECIPES</p>
+            <div class="ratings">
+                <i>★</i>
+                <i>★</i>
+                <i>★</i>
+                <i>★</i>
+                <i>★</i>
+                <span>2 Ratings</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <h1>What would you like to cook?</h1>
+        <div class="searching">
+            <div class="search-box">
+                <input type="text" placeholder="Search here...">
+                <button>Search</button>
+            </div>
+            <h2>Popular Searches</h2>
+            <div class="popular-searches">
+                <button>Chicken</button>
+                <button>Smoothies</button>
+                <button>Banana Bread</button>
+                <button>Lasagna</button>
+                <button>Pancakes</button>
+                <button>Meatloaf</button>
+                <button>Cookies</button>
+                <button>Tacos</button>
+                <button>Pizza</button>
+                <button>Burgers</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <h1>You'll Also Love This</h1>
+      <div class="recipe">
+        <img src="images/sinigang.webp" alt="Recipe Image" />
+        <div class="recipe-content">
+          <h2 class="recipe-title">Pork Sinigang</h2>
+          <p class="recipe-category">Filipino</p>
+          <div class="recipe-rating">
+            <span class="star">★★★★★</span>
+            <sp class="rating-count"
+            <span class="rating-count">100 ratings</span>
+          </div>
+          <a href="#" class="recipe-link">View Recipe</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="recipe">
+          <img src="images/humba.jpg" alt="Recipe Image" />
+          <div class="recipe-content">
+            <h2 class="recipe-title">Humba</h2>
+            <p class="recipe-category">Filipino</p>
+            <div class="recipe-rating">
+              <span class="star">★★★★</span>
+              <sp class="rating-count"
+              <span class="rating-count">70 ratings</span>
+            </div>
+            <a href="#" class="recipe-link">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="recipe">
+          <img src="images/tinola.webp" alt="Recipe Image" />
+          <div class="recipe-content">
+            <h2 class="recipe-title">Chicken Tinola</h2>
+            <p class="recipe-category">Filipino</p>
+            <div class="recipe-rating">
+              <span class="star">★★★★★</span>
+              <sp class="rating-count"
+              <span class="rating-count">100 ratings</span>
+            </div>
+            <a href="#" class="recipe-link">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="recipe">
+          <img src="images/pinakbet.jpg" alt="Recipe Image" />
+          <div class="recipe-content">
+            <h2 class="recipe-title">Pinakbet</h2>
+            <p class="recipe-category">Filipino</p>
+            <div class="recipe-rating">
+              <span class="star">★★★★★</span>
+              <sp class="rating-count"
+              <span class="rating-count">100 ratings</span>
+            </div>
+            <a href="#" class="recipe-link">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="recipe">
+          <img src="images/lumpia.webp" alt="Recipe Image" />
+          <div class="recipe-content">
+            <h2 class="recipe-title">Filipino Lumpia</h2>
+            <p class="recipe-category">Filipino</p>
+            <div class="recipe-rating">
+              <span class="star">★★★★★</span>
+              <sp class="rating-count"
+              <span class="rating-count">110 ratings</span>
+            </div>
+            <a href="#" class="recipe-link">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="recipe">
+          <img src="images/cassava cake.webp" alt="Recipe Image" />
+          <div class="recipe-content">
+            <h2 class="recipe-title">Cassava Cake</h2>
+            <p class="recipe-category">Filipino</p>
+            <div class="recipe-rating">
+              <span class="star">★★★★★</span>
+              <sp class="rating-count"
+              <span class="rating-count">100 ratings</span>
+            </div>
+            <a href="#" class="recipe-link">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="recipe">
+          <img src="images/kawali.webp" alt="Recipe Image" />
+          <div class="recipe-content">
+            <h2 class="recipe-title">Lechon Kawali</h2>
+            <p class="recipe-category">Filipino</p>
+            <div class="recipe-rating">
+              <span class="star">★★★★★</span>
+              <sp class="rating-count"
+              <span class="rating-count">100 ratings</span>
+            </div>
+            <a href="#" class="recipe-link">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="recipe">
+          <img src="images/buchi.webp" alt="Recipe Image" />
+          <div class="recipe-content">
+            <h2 class="recipe-title">Buchi</h2>
+            <p class="recipe-category">Filipino</p>
+            <div class="recipe-rating">
+              <span class="star">★★★★★</span>
+              <sp class="rating-count"
+              <span class="rating-count">100 ratings</span>
+            </div>
+            <a href="#" class="recipe-link">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="kinaubos">
+        <footer class="footer">
+            <div class="trustarc">
+                <img src="./marky.jpg" alt="TrustArc">
+            </div>
+                <p class="copyright">&copy; 2024 Marc Christian Agravante</p>
+        </footer>
     </div>
 </body>
 </html>
