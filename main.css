@@ -82,7 +82,6 @@ header {
 .upper a {
     text-decoration: none ;
     color: #333;
-    text-transform: uppercase;
 }
 
 .nav {
@@ -114,11 +113,6 @@ header {
     width: 100%;
 }
 
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-} */
 
 .allrecipe{
     margin-top: 0%;
@@ -162,6 +156,7 @@ h2 {
 body{
     font-family: sans-serif;
     background-color: #f5f5f5;
+    margin: 0;
 }
 
   .container {
@@ -222,34 +217,112 @@ body{
     margin-left: 5px;
   }
 
-  .kinaubos {
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  .gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #ff6600;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 8px;
+  
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+  }
+  
+  footer{
+    background: #343434;
+    padding-top: 50px;
+    color: white;
+  }
+  .footer-container{
+    width: 1140px;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
     justify-content: center;
   }
-
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    /* background-color: #f2f2f2; */
+  .footer-content{
+    width: 33.3%;
+  }
+  h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 7px;
+  }
+  .footer-content ul{
+    text-align: center;
+  }
+  .list{
+    padding: 0;
+  }
+  .list a{
+    color: white !important;
+  }
+  .list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+  }
+  .list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+  }
+  .list li:hover::before{
+    width: 70px;
+  }
+  .social-icons{
+    text-align: center;
+    padding: 0;
+  }
+  .social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+  }
+  .social-icons i{
+    color: white;
+    font-size: 25px;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    color: #f18930;
+  }
+  .social-icons i:hover{
+    color: #f18930;
+  }
+  .bottom-bar{
+    background: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+  }
+  .bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
   }
   
-  
-  .trustarc {
-    display: inline- block;
-    margin-left: 10px;
-  }
-  
-  .trustarc img {
-    height: 30px;
-    margin-right: 10px;
-  }
-  
-  .copyright {
-    font-size: 14px;
-    color: #666;
-  }

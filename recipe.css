@@ -1,6 +1,8 @@
 body {
     font-family: sans-serif;
     background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
   }
 
   .una{
@@ -16,7 +18,7 @@ body {
     background-color: white;
   }
   
-  h3 {
+  .text3 {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
@@ -132,7 +134,6 @@ body {
 .upper a {
     text-decoration: none ;
     color: #333;
-    text-transform: uppercase;
 }
 
 .nav {
@@ -170,4 +171,113 @@ body {
     margin: 10px 0;
     margin-left: 20%;
     box-shadow: 0 8px 8px black;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #ff6600;
+  bottom: 40px;
+  right: 50px;
+  border-radius: 8px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+footer{
+  background: #343434;
+  padding-top: 50px;
+  color: white;
+}
+.footer-container{
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.footer-content{
+  width: 33.3%;
+}
+h3{
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer-content p{
+  width:190px;
+  margin: auto;
+  padding: 7px;
+}
+.footer-content ul{
+  text-align: center;
+}
+.list{
+  padding: 0;
+}
+.list a{
+  color: white !important;
+}
+.list li{
+  width: auto;
+  text-align: center;
+  list-style-type:none;
+  padding: 7px;
+  position: relative;
+}
+.list li::before{
+  content: '';
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #f18930;
+  transition-duration: .5s;
+}
+.list li:hover::before{
+  width: 70px;
+}
+.social-icons{
+  text-align: center;
+  padding: 0;
+}
+.social-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+.social-icons i{
+  color: white;
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #f18930;
+}
+.social-icons i:hover{
+  color: #f18930;
+}
+.bottom-bar{
+  background: #f18930;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+.bottom-bar p{
+  color: #343434;
+  margin: 0;
+  font-size: 16px;
+  padding: 7px;
 }
