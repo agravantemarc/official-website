@@ -101,6 +101,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    justify-content: center;
     /* background-color: #D5D6EA; */
   }
 
